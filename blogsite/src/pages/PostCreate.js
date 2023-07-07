@@ -31,7 +31,7 @@ data.set('summary',summary);
 data.set('content',content);
 data.set('file',files[0]);
  e.preventDefault();
-    const response= await fetch('https://b-log-yz7o.onrender.com/post',{
+    const response= await fetch('https://blog-h084.onrender.com/post',{
         method:'POST',
         body:data,
         credentials:'include',

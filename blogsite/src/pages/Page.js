@@ -3,7 +3,7 @@ import Post from "../posts";
 function Page(){
   const[post,setposts]= useState([])
   useEffect(()=>{
-    fetch('https://b-log-yz7o.onrender.com/post').then((response=>{
+    fetch('https://blog-h084.onrender.com/post').then((response=>{
       response.json().then(post=>{
         setposts(post);
       })

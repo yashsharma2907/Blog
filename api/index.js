@@ -15,7 +15,7 @@ const { findById } = require('./model/user');
 
 const secret = bcrypt.genSaltSync(10);
 
-app.use(cors({credentials:true,origin:'https://shiny-youtiao-e7185b.netlify.app'}));
+app.use(cors({credentials:true,origin:'http://localhost:3000'}));
 app.use(express.json())
 app.use(cookiePraser());
 app.use('/uploads', express.static(__dirname+'/uploads'));

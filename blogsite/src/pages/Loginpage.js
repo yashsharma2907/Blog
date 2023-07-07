@@ -8,7 +8,7 @@ export default function Loginpage(){
   const {setUserInfo} = useContext(UserContext);
     async function login(e) {
       e.preventDefault();
-      const response = await fetch('https://b-log-yz7o.onrender.com/login', {
+      const response = await fetch('https://blog-h084.onrender.com/login', {
         method: 'POST',
         body: JSON.stringify({username,pass}),
         headers: {'Content-Type':'application/json'},

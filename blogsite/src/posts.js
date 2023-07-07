@@ -18,7 +18,7 @@ function Post({ post}) {
     <div className="post">
       <div className="image">
         <Link to= {`/post/${id}`}>
-        <img src={'https://b-log-yz7o.onrender.com/'+cover}></img>
+        <img src={'https://blog-h084.onrender.com/'+cover}></img>
         </Link>
       </div>
       <div className="text">

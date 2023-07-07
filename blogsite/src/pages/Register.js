@@ -6,7 +6,7 @@ export default function Register(){
   const [pass, setPass] = useState('');
     async function register(e) {
       e.preventDefault();
-      const response = await fetch('https://b-log-yz7o.onrender.com/register', {
+      const response = await fetch('https://blog-h084.onrender.com/register', {
         method: 'POST',
         body: JSON.stringify({username,pass}),
         headers: {'Content-Type':'application/json'},

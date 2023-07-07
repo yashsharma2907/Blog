@@ -6,7 +6,7 @@ function PagePost(){
 const[info,setinfo]= useState(null);
 const {id} = useParams();
 useEffect(()=>{
-fetch(`https://b-log-yz7o.onrender.com/post/${id}`).then(response=>{
+fetch(`https://blog-h084.onrender.com/post/${id}`).then(response=>{
     response.json().then(info=>{
         setinfo(info);
     })
@@ -18,7 +18,7 @@ if(!info) return '';
        <h1>{info.title}</h1>
        <div className="author">by {info.author.username} </div>
        <div className="image">
-        <img src={`https://b-log-yz7o.onrender.com/${info.cover}`} alt="cover"></img>
+        <img src={`https://blog-h084.onrender.com/${info.cover}`} alt="cover"></img>
        </div>
        <div className="content" dangerouslySetInnerHTML={{__html:info.content}}/>
        </div>
